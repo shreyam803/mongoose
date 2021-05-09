@@ -28,8 +28,8 @@ connect.then((db) => {
         .then(() => {
             return mongoose.connection.close();
         })
-        .catch((err) => {
-            console.log(err);
+        .catch((error) => {
+            console.log(error);
         });
 
 });
